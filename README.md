@@ -1,2 +1,6 @@
 # Road-Lane-Line-Detection
-Lane Line Detection is a crucial component of Advanced Driver Assistance Systems(ADAS) and essential feature of autonomous vehicles.
+Road lane line detection is a crucial component of autonomous vehicle navigation and advanced driver assistance systems. Various computer vision techniques are employed to achieve accurate and reliable results. The process typically involves several stages, starting with preprocessing using Sobel operators and Canny edge detectors to highlight lane edges in the input image. The Hough Transform is then applied to identify straight lines within the edges detected.
+
+To enhance robustness, a sliding window technique is employed, which involves dividing the image into horizontal strips and iteratively searching for lane lines within each strip. This method allows for better adaptation to varying road conditions. Kalman filtering is often integrated to predict and smooth the trajectory of detected lane lines over time, compensating for noise and outliers.
+
+Histogram-based line detection utilizes intensity histograms to identify prominent lane features, aiding in initial lane line localization. These methods collectively contribute to a comprehensive lane detection system that can handle diverse environmental conditions. The integration of these techniques enhances the accuracy and reliability of detecting road lane lines, making it a vital component for autonomous vehicles and advanced driver assistance systems, ensuring safer and more precise navigation.
